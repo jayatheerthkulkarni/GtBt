@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.img-container {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.transparent-button {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0); /* Transparent */
+  border: none;
+  cursor: pointer; /* Indicate it's clickable */
+}
+
+/* Entire image region for the "good touch" */
+.image-region {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Region 1's Button - Coordinates based on given margins */
+.region1 {
+  top: 70%;
+  left: 46%;
+  width: 7%;
+  height: 5%;
+}
+
+/* Region 2's Button */
+.region2 {
+  top: 49%;
+  left: 44%;
+  width: 8%;
+  height: 4%;
+}
+
+/* Additional Region 3 */
+.region3 {
+  top: 70%;
+  left: 42%;
+  width: 6%;
+  height: 5%;
+}
+
+/* Title text */
+.title {
+  position: absolute;
+  top: 5%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-family: "poppins";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none; 
+}

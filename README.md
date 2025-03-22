@@ -13,11 +13,12 @@ GtBt is an interactive platform featuring AI avatars designed to teach children 
 2. Install dependencies for the client:
  
    ```bash  
-   cd client  
+   cd GtBt
+   cd server
    npm install  
    ```  
 3. Start the application:
     
    ```bash  
-   npm start  
+   npm server.js
    ```  
